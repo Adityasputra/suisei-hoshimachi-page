@@ -1,0 +1,94 @@
+.suisei-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.suisei-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.suisei-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #3fa9f5, #1a1a40);
+  border-radius: 34px;
+  transition: 0.4s;
+  box-shadow: 0 0 5px #4fd1c5, 0 0 15px #1a1a40 inset;
+}
+
+.suisei-slider::before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  bottom: 3px;
+  background-image: url("/img/star-svgrepo-com.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.4s;
+  border-radius: 50%;
+  box-shadow: 0 0 4px #ffffffaa;
+}
+
+.suisei-switch input:checked + .suisei-slider {
+  background: linear-gradient(to right, #0d0d1a, #3fa9f5);
+}
+
+.suisei-switch input:checked + .suisei-slider::before {
+  transform: translateX(30px);
+  background-image: url("/img/moon-svgrepo-com.svg");
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode .content__stats div {
+  background-color: #333;
+}
+
+body.dark-mode .navbar__language-dropdown {
+  background-color: #222;
+  color: #eee;
+}
+
+body.dark-mode .navbar__language-dropdown li:hover {
+  background-color: #333;
+}
+
+body.dark-mode .content__bio__more__text {
+  color: #eee;
+  border-color: #eee;
+}
+
+body.dark-mode .content__bio__more__text:hover {
+  background-color: #eee;
+  color: #121212;
+}
+
+body.dark-mode .social-icon {
+  border-color: #eee;
+}
+
+body.dark-mode .social-icon a {
+  color: #eee;
+}
+
+body.dark-mode .social-icon:hover {
+  background-color: #eee;
+}
+
+body.dark-mode .social-icon:hover a {
+  color: #121212;
+}

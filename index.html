@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suisei Hoshimachi Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="darkmode.css" />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link
       rel="stylesheet"
@@ -42,8 +43,11 @@
               </div>
             </div>
             <div class="navbar__right">
-              <div class="navbar__search">
-                <i class="material-icons">search</i>
+              <div class="navbar__theme-toggle" title="Toggle Dark Mode">
+                <label class="suisei-switch">
+                  <input type="checkbox" id="darkToggle" />
+                  <span class="suisei-slider"></span>
+                </label>
               </div>
             </div>
           </nav>
@@ -108,9 +112,9 @@
               ><span>Teshima Nari</span>
             </div>
             <div>
-              <span style="font-weight: bold">Hashtags </span
-              ><span>Stream Tag: #ほしまちすたじお</span
-              ><span>Fan Art: #ほしまちぎゃらりー</span>
+              <span style="font-weight: bold">Hashtags </span>
+              <span>Stream Tag: #ほしまちすたじお</span>
+              <span>Fan Art: #ほしまちぎゃらりー</span>
             </div>
           </div>
 
@@ -150,17 +154,12 @@
           <p>
             Hoshimachi Suisei began her career as an independent VTuber on March
             22, 2018. She designed and created her virtual character entirely by
-            herself, including the illustrations and Live2D model. Although she
-            briefly joined the agency S:gnal in July 2018, she left a month
-            later to continue her career independently. Suisei released her
-            first original song, "Comet," in November 2018, which reflected her
-            ambition to shine brighter than anyone else.
+            herself, including the illustrations and Live2D model.
           </p>
           <p>
             In May 2019, Suisei joined INNK Music, a music label founded by
             Hololive, and later became an official member of Hololive in
-            December 2019. Since then, she received a new Live2D model and began
-            streaming more actively.
+            December 2019.
           </p>
           <div class="content__bio__more">
             <a
@@ -189,35 +188,6 @@
       </section>
     </main>
 
-    <script>
-      const selector = document.querySelector(".navbar__language-selector");
-      const currentLang = selector.querySelector(".navbar__language-current");
-      const options = selector.querySelectorAll(
-        ".navbar__language-dropdown li"
-      );
-
-      selector.addEventListener("click", () => {
-        selector.classList.toggle("open");
-        selector.setAttribute(
-          "aria-expanded",
-          selector.classList.contains("open")
-        );
-      });
-
-      options.forEach((item) => {
-        item.addEventListener("click", (e) => {
-          currentLang.textContent = e.target.dataset.lang;
-          selector.classList.remove("open");
-          selector.setAttribute("aria-expanded", "false");
-        });
-      });
-
-      document.addEventListener("click", (e) => {
-        if (!selector.contains(e.target)) {
-          selector.classList.remove("open");
-          selector.setAttribute("aria-expanded", "false");
-        }
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
