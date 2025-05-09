@@ -4,49 +4,220 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suisei Hoshimachi Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <div>
-          <div class="logo">
-            <h1>Logo</h1>
-          </div>
-          <div class="language">
-            <ul>
-              <li>EN</li>
-              <li>FR</li>
-              <li>ES</li>
-            </ul>
-          </div>
-          <div class="menu">
-            <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Services</li>
-              <li>Contact</li>
-            </ul>
+    <header class="hero">
+      <div class="hero__image">
+        <div class="hero__overlay">
+          <nav class="navbar">
+            <div class="navbar__left">
+              <div class="navbar__logo">
+                <img
+                  src="./img/Hololive_Production_logo.svg.png"
+                  alt="Hololive Production Logo"
+                />
+              </div>
+              <div
+                class="navbar__language-selector"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="material-icons">language</i>
+                <span class="navbar__language-current">EN</span>
+                <i class="material-icons">arrow_drop_down</i>
+                <ul class="navbar__language-dropdown">
+                  <li data-lang="EN">English</li>
+                  <li data-lang="JP">日本語</li>
+                  <li data-lang="ID">Bahasa</li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar__right">
+              <div class="navbar__search">
+                <i class="material-icons">search</i>
+              </div>
+            </div>
+          </nav>
+
+          <div class="hero__content">
+            <div class="hero__card">
+              <img
+                src="./img/Hoshimachi_Suisei_Live_Tour_2024_Spectra_of_Nova_Key_Visual_by_REOENL.webp"
+                alt="Suisei Live Tour Visual"
+              />
+            </div>
+            <div class="hero__card">
+              <img
+                src="./img/Hoshimachi_Suisei_SHANTI_Illustration_by_Torino_Kawazu.webp"
+                alt="Suisei SHANTI Visual"
+              />
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
 
     <main>
-      <section>
-        <div></div>
-        <div></div>
-        <div></div>
+      <section class="content">
+        <div class="content__about">
+          <h5 style="text-transform: uppercase">hololive Generation 0</h5>
+          <h1 class="content__name">
+            Hoshimachi Suisei <span class="tabler--comet"></span>
+          </h1>
+          <h4>
+            A shooting star that appeared from diamonds in the rough; I'm the
+            virtual idol Hoshimachi Suisei!
+          </h4>
+          <p style="margin-top: 1rem">
+            A virtual idol with an exceptional love for songs and idols. She
+            works tirelessly towards her dreams of performing in Tokyo Dome one
+            day.
+          </p>
+
+          <div class="content__stats">
+            <div>
+              <span style="font-weight: bold">Birthday</span
+              ><span>March 22</span>
+            </div>
+            <div>
+              <span style="font-weight: bold">Debut</span
+              ><span>March 22, 2018</span>
+            </div>
+            <div>
+              <span style="font-weight: bold">Height</span><span>160 cm</span>
+            </div>
+            <div>
+              <span style="font-weight: bold">Unit</span
+              ><span>hololive Generation 0</span>
+            </div>
+            <div>
+              <span style="font-weight: bold">Fan Name</span
+              ><span>Hoshiyomi (Stargazers)</span>
+            </div>
+            <div>
+              <span style="font-weight: bold">Makeup charge</span
+              ><span>Teshima Nari</span>
+            </div>
+            <div>
+              <span style="font-weight: bold">Hashtags </span
+              ><span>Stream Tag: #ほしまちすたじお</span
+              ><span>Fan Art: #ほしまちぎゃらりー</span>
+            </div>
+          </div>
+
+          <div class="content__socials">
+            <div class="social-icon twitter">
+              <a
+                href="https://x.com/suisei_hosimati"
+                target="_blank"
+                aria-label="Suisei Twitter"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </div>
+            <div class="social-icon youtube">
+              <a
+                href="https://youtube.com/@hoshimachisuisei?si=oSt93ib339D_SfXp"
+                target="_blank"
+                aria-label="Suisei YouTube"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+            <div class="social-icon tiktok">
+              <a
+                href="https://www.tiktok.com/@suisei_hosimati_hololive?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+                aria-label="Suisei TikTok"
+              >
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__bio">
+          <h2>Biography</h2>
+          <p>
+            Hoshimachi Suisei began her career as an independent VTuber on March
+            22, 2018. She designed and created her virtual character entirely by
+            herself, including the illustrations and Live2D model. Although she
+            briefly joined the agency S:gnal in July 2018, she left a month
+            later to continue her career independently. Suisei released her
+            first original song, "Comet," in November 2018, which reflected her
+            ambition to shine brighter than anyone else.
+          </p>
+          <p>
+            In May 2019, Suisei joined INNK Music, a music label founded by
+            Hololive, and later became an official member of Hololive in
+            December 2019. Since then, she received a new Live2D model and began
+            streaming more actively.
+          </p>
+          <div class="content__bio__more">
+            <a
+              href="https://hololive.hololivepro.com/en/talents/hoshimachi-suisei/"
+              class="content__bio__more__text"
+              target="_blank"
+              >Read more on Hololive</a
+            >
+          </div>
+        </div>
+
+        <div class="content__card">
+          <div class="card__top">
+            <img
+              src="./img/Hoshimachi_Suisei_Live_Tour_2024_Spectra_of_Nova_Key_Visual_by_REOENL.webp"
+              alt="Suisei 2024 Calendar Visual"
+            />
+          </div>
+          <div class="card__bottom">
+            <img
+              src="./img/Hoshimachi_Suisei_SHANTI_Illustration_by_Torino_Kawazu.webp"
+              alt="Suisei Alternate Visual"
+            />
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <div>
-        <p>&copy; 2023 Your Company</p>
-        <ul>
-          <li>Privacy Policy</li>
-          <li>Terms of Service</li>
-        </ul>
-      </div>
-    </footer>
+    <script>
+      const selector = document.querySelector(".navbar__language-selector");
+      const currentLang = selector.querySelector(".navbar__language-current");
+      const options = selector.querySelectorAll(
+        ".navbar__language-dropdown li"
+      );
+
+      selector.addEventListener("click", () => {
+        selector.classList.toggle("open");
+        selector.setAttribute(
+          "aria-expanded",
+          selector.classList.contains("open")
+        );
+      });
+
+      options.forEach((item) => {
+        item.addEventListener("click", (e) => {
+          currentLang.textContent = e.target.dataset.lang;
+          selector.classList.remove("open");
+          selector.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!selector.contains(e.target)) {
+          selector.classList.remove("open");
+          selector.setAttribute("aria-expanded", "false");
+        }
+      });
+    </script>
   </body>
 </html>
