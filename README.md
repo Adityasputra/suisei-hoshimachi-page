@@ -15,6 +15,7 @@ This project was created as a personal tribute to Hoshimachi Suisei, showcasing 
 - Responsive layout for mobile and desktop
 - Clean UI with sectioned content: About, Biography, and Social Media
 - Hover effects and transitions
+- Dark Mode
 - Images used include AI-generated fan visuals and credits to official illustrations (non-commercial use)
 
 ## Technologies Used
